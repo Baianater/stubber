@@ -1,10 +1,10 @@
 {
-  "name": "@mohamed-abdelrhman/stubber",
+  "name": "@baianat/stubber",
   "version": "1.1.4",
   "description": "resource generator for nestjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mohamed-abdelrhman/stubber"
+    "url": "https://github.com/Baianater/stubber"
   },
   "keywords": [
     "cli",
@@ -20,7 +20,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Mohamed Abdelrhman <mohamed95abdelrhman@gmail.com>",
+  "author": "Baianater <development@baianat.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",

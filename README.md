@@ -33,26 +33,29 @@ you are very welcome to collabrate here.
 ```
 
 ## Install
+
 ```sh
-npm i @mohamed-abdelrhman/stubber -g
+npm i @baianat/stubber -g
 ```
 
 ## Usage
+
 ```sh
 stubber
 ```
 
 ## Todo List
-```sh 
+
+```sh
 Support  CQRS
 support sequelize
 support mongoose
 Support native connection
-``` 
+```
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/mohamed-abdelrhman/stubber/issues). You can also take a look at the [contributing guide](https://github.com/mohamed-abdelrhman/stubber/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Baianater/stubber/issues). You can also take a look at the [contributing guide](https://github.com/Baianater/stubber/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
