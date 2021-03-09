@@ -1,0 +1,32 @@
+import { Connection, Repository } from 'typeorm';
+import { Injectable } from '@nestjs/common';
+import { Dummy } from './entities/fileName.entity';
+import { CreateDummyInput } from './inputs/create-fileName.input';
+
+@Injectable()
+export class DummyRepository {
+  repo: Repository<Dummy>;
+  constructor(private connection: Connection) {
+    this.repo = connection.getRepository(Dummy);
+  }
+  dummy(dummy_id: string): Promise<Dummy> {
+    return this.repo.findOne({ dummy_id });
+  }
+
+  dummys(): Promise<Dummy[]> {
+    return this.repo.find();
+  }
+
+  async createDummy(dummyInput: CreateDummyInput): Promise<Dummy> {
+    const dummyObject = this.repo.create();
+    return dummyObject.save();
+  }
+
+  async deleteDummy(dummy: Dummy): Promise<Dummy> {
+    return await dummy.remove();
+  }
+
+  async updateDummy(dummy: Dummy): Promise<Dummy> {
+    return dummy.save();
+  }
+}

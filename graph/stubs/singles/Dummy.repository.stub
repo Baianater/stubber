@@ -1,0 +1,12 @@
+import { Connection, Repository } from 'typeorm';
+import { Injectable } from '@nestjs/common';
+import { Dummy } from './entities/fileName.entity';
+
+@Injectable()
+export class DummyRepository {
+  repo: Repository<Dummy>;
+  constructor(private connection: Connection) {
+    this.repo = connection.getRepository(Dummy);
+  }
+
+}
